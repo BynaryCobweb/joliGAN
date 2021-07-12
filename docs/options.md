@@ -1,6 +1,26 @@
-# Cyclegan with mask labels
+# JoliGAN Models and Options
 
-All the options and parameters available for [cyclegan](cyclegan.md) can be tuned here too.
+## CycleGAN
+
+### Training parameters
+|Parameter|Default|Role|
+|-|-|-|
+|lambda_A|10.0|weight for cycle loss A->B->A|
+|lambda_B|10.0|weight for cycle loss B->A->B|
+|lambda_B|0.5|weight for cycle loss B->A->B|
+
+## Cyclegan with labels
+
+All the options and parameters available for [cyclegan](#cyclegan) can be tuned here too.
+
+|Parameter|Default|Role|
+|-|-|-|
+
+*TODO*
+
+## Cyclegan with mask labels
+
+All the options and parameters available for [cyclegan](#cyclegan) can be tuned here too.
 
 ### Training parameters
 
@@ -15,8 +35,6 @@ All the options and parameters available for [cyclegan](cyclegan.md) can be tune
 |nb_mask_input|0|Postive integer <= nb_attn|number of attention masks applied on input image (for attention generator)|
 
 
-<br>
-
 ### Training options
 
 |Option|Role|
@@ -26,3 +44,5 @@ All the options and parameters available for [cyclegan](cyclegan.md) can be tune
 |train_f_s-B|train f_s on domain B (besides domain A)|
 |fs_light|use a lighter network architecture for f_s|
 |D_label_smooth|whether to use one-sided label smoothing with discriminator|
+
+### TODO: CUT, CUT semantic, Recycle
